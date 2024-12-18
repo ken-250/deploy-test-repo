@@ -50,5 +50,8 @@ ENV GOOGLE_MAPS_API_KEY=${_GOOGLE_MAPS_API_KEY}
 ENV MAIL_PASSWORD=${_MAIL_PASSWORD}
 ENV MAIL_USERNAME=${_MAIL_USERNAME}
 
+# google maps api keyを表示
+RUN echo $GOOGLE_MAPS_API_KEY
+
 # アプリケーションの起動コマンド
 CMD ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app/app.jar"]
