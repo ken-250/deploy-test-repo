@@ -33,16 +33,7 @@ steps:
       '--vpc-egress',
       'all',
       '--allow-unauthenticated',
-      '--no-cpu-throttling',
-      '--update-secrets',
-        'POSTGRES_HOST=$$POSTGRES_HOST:latest',
-        'POSTGRES_PORT=$$POSTGRES_PORT:latest',
-        'POSTGRES_DB=$$POSTGRES_DB:latest',
-        'POSTGRES_USER=$$POSTGRES_USER:latest',
-        'POSTGRES_PASSWORD=$$POSTGRES_PASSWORD:latest',
-        'GOOGLE_MAPS_API_KEY=$$GOOGLE_MAPS_API_KEY:latest',
-        'MAIL_PASSWORD=$$MAIL_PASSWORD:latest',
-        'MAIL_USERNAME=$$MAIL_USERNAME:latest'
+      '--no-cpu-throttling'
     ]
 
 # Secret Managerから環境変数を取得
