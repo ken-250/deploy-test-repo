@@ -55,8 +55,6 @@ steps:
       'MAIL_USERNAME'
     ]
 
-
-
 # Secret Managerから環境変数を取得
 availableSecrets:
   secretManager:
