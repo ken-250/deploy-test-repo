@@ -33,7 +33,7 @@ steps:
       '--vpc-egress',
       'all',
       '--allow-unauthenticated',
-      '--no-cpu-throttling'
+      '--no-cpu-throttling',
       '--set-secrets',
         'POSTGRES_HOST=$$POSTGRES_HOST',
         'POSTGRES_PORT=$$POSTGRES_PORT',
