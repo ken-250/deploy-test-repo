@@ -43,16 +43,6 @@ steps:
       '--set-secrets=MAIL_PASSWORD=projects/499665473392/secrets/MAIL_PASSWORD/versions/latest',
       '--set-secrets=MAIL_USERNAME=projects/499665473392/secrets/MAIL_USERNAME/versions/latest'
     ]
-    secretEnv: [
-      'POSTGRES_HOST',
-      'POSTGRES_PORT',
-      'POSTGRES_DB',
-      'POSTGRES_USER',
-      'POSTGRES_PASSWORD',
-      'GOOGLE_MAPS_API_KEY',
-      'MAIL_PASSWORD',
-      'MAIL_USERNAME'
-    ]
 
 images:
   - 'gcr.io/$PROJECT_ID/tabisketch:$COMMIT_SHA'
